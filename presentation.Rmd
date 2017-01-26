@@ -7,7 +7,7 @@ output:
     highlight: espresso
 ---
 
-## <divs> New Title Page! </divs>
+## <divs> R for BC Stats </divs>
 
 ## Introduction to R
 
@@ -33,13 +33,24 @@ R has an extensive history as a tool for statistical analysis in academia. Due t
 
 ## Current projects
 
-> - Put material here
+> - WES Engagement Migration Survey app
+> - BC Public Service Career Survey app
+> - Career survey batch summary reports
+> - Re-usable presentation templates
+> - Data visualization for various reports
+> - Census survey batch profile maps
+
+## {data-background="www/censusMaps.gif" data-background-size="600px"}
+
+## Other sample usages
+
+Enter data and summary tables
 
 ```{r}
 summary(cars)
 ```
 
-## Slide with Plot
+## Easily embed plots within slide decks
 
 ```{r, echo=FALSE}
 plot(cars)
