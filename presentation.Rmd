@@ -1,0 +1,47 @@
+---
+title:
+output: 
+  revealjs::revealjs_presentation:
+    theme: night
+    transition: slide
+    highlight: espresso
+---
+
+## <divs> New Title Page! </divs>
+
+## Introduction to R
+
+R has an extensive history as a tool for statistical analysis in academia. Due to relatively recent development efforts such as RStudio and "tidyverse," R is now more approachable and user friendly than ever before. 
+
+## Benefits of R to BC Stats
+
+> - Highly customizable data visualization; beyond the capabilities of Excel
+> - One stop shop for projects; allows for data manipulation and tabulation, regression analysis, and results sharing in an integrated fashion
+> - Requires significant investment of time and effort initially, but promotes the creation of easily reproducible workflows
+> - Enables collaboration on projects both with individuals inside and outside of the organization
+> - High degree of compatibility with Microsoft Office suite and other software packages currently in use
+
+## Sample tasks well suited for R
+
+> - Run SQL-like queries on an imported dataset
+> - Produce various types of graphs and charts, with the option of very precise controls on the aesthetics 
+> - Easily generate maps highlighting numerical attributes across different economic regions
+> - Generate PDF reports in batch
+> - Create dynamic web applications to present survey results
+
+## {data-background-video="www/migrationApp.webm" data-background-video-loop="true"}
+
+## Current projects
+
+> - Put material here
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
