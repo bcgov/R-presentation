@@ -8,6 +8,7 @@ output:
 ---
 
 ## <divs> R for BC Stats </divs>
+<img src = "www/RStudioLogo.png">
 
 ## Introduction to R
 
@@ -39,8 +40,7 @@ R has an extensive history as a tool for statistical analysis in academia. Due t
 > - Re-usable presentation templates
 > - Data visualization for various reports
 > - Census survey batch profile maps
-
-## {data-background="www/censusMaps.gif" data-background-size="600px"}
+> - <img src = "www/censusMaps.gif">
 
 ## Other sample usages
 
