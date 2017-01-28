@@ -9,6 +9,8 @@ output:
 
 ## <divs> R for BC Stats </divs>
 
+Brief introduction to some basic use cases
+
 ## Introduction to R
 
 R has an extensive history as a tool for statistical analysis in academia. Due to relatively recent development efforts such as RStudio and "tidyverse," R is now more approachable and user friendly than ever before. 
