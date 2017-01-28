@@ -8,7 +8,6 @@ output:
 ---
 
 ## <divs> R for BC Stats </divs>
-<img src = "www/RStudioLogo.png">
 
 ## Introduction to R
 
@@ -40,19 +39,51 @@ R has an extensive history as a tool for statistical analysis in academia. Due t
 > - Re-usable presentation templates
 > - Data visualization for various reports
 > - Census survey batch profile maps
-> - <img src = "www/censusMaps.gif">
+> - <img src = "www/censusMaps.gif" height = "350">
 
-## Other sample usages
+## Data Manipulation {data-transition="slide-in fade-out"}
 
-Enter data and summary tables
+<img src = "www/gapminder.png"> 
 
-```{r}
-summary(cars)
+## Data Manipulation {data-transition="fade-in slide-out"}
+
+
+```{r, echo=5 , message=FALSE}
+library(dplyr)
+library(gapminder)
+library(knitr)
+
+lifeData <- gapminder %>% filter(year == 2007) %>%
+  group_by(continent) %>%
+  summarise(meanLifeExp = mean(lifeExp)) 
+
+kable(lifeData, 
+      digits = 2, 
+      col.names = c("Continent", "Life Expectancy"),
+      align = c('l','c')
+      )
+
 ```
 
-## Easily embed plots within slide decks
+## Data visualisation
 
-```{r, echo=FALSE}
-plot(cars)
+```{r, echo=3, message=FALSE, fig.width=7, fig.height=3.5}
+library(ggplot2)
+
+ggplot(data = gapminder %>% filter(continent == "Americas"), 
+       aes(x=year, y=lifeExp)) + 
+  geom_point(alpha = 0.3, size = 4, colour = "Blue") +
+  theme_minimal() +
+  geom_smooth(method = 'lm') +
+  labs(title = "Increasing Life Expectancy in the Americas")
+  
+
 ```
 
+## Resources
+
+R can be downloaded from https://cran.r-project.org/
+
+RStudio is available at https://www.rstudio.com/products/rstudio/download/
+
+There are numerous resources available to learn R. http://www.cookbook-r.com/ is a useful resource with clear and concise examples of various basic tasks in R. In addition, http://stackexchange.com/ contains numerous queries and solutions that are relevant to a lot of issues a regular R user can face. In general, the vast R community online is extremely helpful in aiding new users learn the software. 
