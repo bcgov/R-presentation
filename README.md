@@ -1,3 +1,6 @@
+![img](https://img.shields.io/badge/Lifecycle-Dormant-ff7f2a)
+[![status: archive](https://github.com/GIScience/badges/raw/master/status/archive.svg)](https://github.com/GIScience/badges#archive)
+
 # R-presentation
 
 [Presentation link](https://rawgit.com/najsaqib/R-presentation/master/presentation.html)
